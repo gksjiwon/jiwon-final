@@ -4,5 +4,19 @@
 <article class="container">
   <h1>Top Landmarks of Austin, Texas</h1>
   <p>Intro text here.</p>
+<div class="row">
+  {% for landmark in austin.landmarks %}
+  <div class="col-sm-6 col-lg-6">
+    <div class="card" style="width: 18rem;">
+      <img src="img/landmarks/{{ landmark.image}} " class="card-img-top" alt="landmark photo">
+      <div class="card-body">
+        <h5 class="card-title">{{ landmark.name }}</h5>
+        <p class="card-text">{{ landmark.location }}</p>
+        <a href="data/blog/{{ blog.slug }}.html" class="btn btn-primary">Keep Reading</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 </article>
 {% endblock %}

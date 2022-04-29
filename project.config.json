@@ -9,6 +9,21 @@
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
       "type": "sheet",
       "name": "bookstores"
+    },
+    {
+      "fileId": "1MczbY9cLHq8_EHx2tEeZ5GhNlwMLJ3Q62jiToQszrfQ",
+      "type": "sheet",
+      "name": "austin"
+    },
+    {
+      "fileId": "16TtvspyB1hL5Q3Ufgux9dmjCfbFMOrtgPR3ZxkVOV5s",
+      "type": "doc",
+      "name": "blog"
+    },
+    {
+      "fileId": "1Hqf1RUSdxa772n7ZjaA1djSTQSWZttsDCND0WPhjD-w",
+      "type": "doc",
+      "name": "restaurant"
     }
   ],
   "to_bake": [
@@ -18,6 +33,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-blog",
+      "data": "blog",
+      "array": "blogs",
+      "slug": "slug",
+      "path": "blog"
     }
   ]
 }
