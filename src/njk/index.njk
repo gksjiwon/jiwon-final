@@ -4,10 +4,22 @@
 
 {% block content %}
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <h1>Austin's life is for me</h1>
-      <p>Reprehenderit excepturi voluptatibus deleniti quidem placeat sunt ad libero qui itaque eius explicabo.</p>
+  <h1>Austin's life is for me</h1>
+  <p>Visit the top landmarks at the city of Austin.</p>
+<div class="row">
+  {% for landmark in austin.landmarks %}
+  <div class="col-sm-6">
+    <div class="card text-dark bg-light mb-3">
+      <img src="img/landmarks/{{ landmark.image }} " class="card-img-top" alt="landmark photo">
+      <div class="card-body">
+        <h5 class="card-title">{{ landmark.name }}</h5>
+        <p class="card-text">{{ landmark.location }}</p>
+        <a href="blog/{{ landmark.slug }}.html" class="btn btn-primary">Keep Reading</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
     </div>
   </div>
 </div>

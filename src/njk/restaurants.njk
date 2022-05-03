@@ -2,12 +2,12 @@
 
 {% block content %}
 <article class="container">
-  <h1>Top Restaurants of Austin, Texas</h1>
-  <p>Intro text here.</p>
+  <h1>Austin Eats</h1>
+  <p>Take a look at the top restaurants!</p>
 <div class="row">
-  {% for item in restaurant.restaurants %}
-  <div class="col-sm-6 col-lg-6">
-    <div class="card" style="width: 18rem;">
+  {% for restaurant in restaurant.restaurants %}
+  <div class="col-sm-6">
+    <div class="card text-dark bg-light mb-3">
       <img src="img/restaurants/{{ restaurant.image }}" class="card-img-top" alt="restaurant photo">
       <div class="card-body">
         <h5 class="card-title">{{ restaurant.name }}</h5>

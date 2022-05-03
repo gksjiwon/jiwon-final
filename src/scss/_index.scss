@@ -1,3 +1,9 @@
-h1 {
-  font-family: 'Libre Bodoni', serif;
+h1, p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  float: none;
 }
